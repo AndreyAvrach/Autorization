@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <header class="header padding-10">
+      <div>
+        <button class="margin-right-10" onclick="onShowClick()">
+          Show form
+        </button>
+        <button onclick="onClearClick()">Clear data</button>
+      </div>
+
+      <div>
+        <button onclick="onEditClick()">Change password</button>
+      </div>
+    </header>
+
+    <main class="main padding-10">
+      <span id="page-title" class="title margin-bottom-10"></span>
+
+      <div id="login-form" class="login-form display-none">
+        <input
+          id="login"
+          class="margin-bottom-10"
+          type="text"
+          placeholder="Enter login"
+        />
+        <input
+          id="password"
+          class="margin-bottom-10"
+          type="password"
+          placeholder="Enter password"
+        />
+
+        <button id="login-button" onclick="onLoginClick()"></button>
+      </div>
+    </main>
+
+    <footer class="footer padding-10">
+      <p><b>Beltelecom, 2022</b></p>
+    </footer>
+  </body>
+</html>
+<script src="script.js"></script>
